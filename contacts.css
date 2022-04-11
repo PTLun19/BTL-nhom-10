@@ -488,4 +488,15 @@ html .page .offset-top-65 {
     .page small {
       font-size: 80%;
     }
-    
+    .form-group span {
+      position: absolute;
+      right: 10px;
+      top: 2px;
+      font-size: 11px;
+      line-height: 11px;
+      color: #d9534f;
+      margin-top: 2px;
+      transition: .3s;
+      z-index: 11;
+  }
+  
