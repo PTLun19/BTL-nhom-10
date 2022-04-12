@@ -203,13 +203,13 @@ body {
   font-size: 25px;
   margin-left: 70px;
 }
-.contacts-link li  {
+.page .contacts-link li  {
   list-style-type: none;
   text-decoration: none;
   margin-left: 70px;
   font-size: 16px;
 }
-.contacts-link li a {
+.page .contacts-link li a {
   list-style-type: none;
   text-decoration: none;
   letter-spacing: 1px;
@@ -217,8 +217,9 @@ body {
   color: #983a42;
   font-family: "Open Sans";
   line-height: 40px;
+  text-transform: lowercase;
 }
-.contacts-link .link {
+.page .contacts-link .link {
   margin-top: 30px;
 }
 .location-link h5{
@@ -411,6 +412,33 @@ html.lt-ie-10 .page .ranges > .cell-sm-11 {
   background-color: #f7f7f4;
 }
 /*body 4*/
+.page .thumbnail .caption {
+  padding: 9px;
+  color: #717171;
+}
+html body .page .thumbnail .caption {
+  position: relative;
+  border: 1px solid #eeeeee;
+  border-top: none;
+  padding: 34px 10px;
+  color: #313131;
+}
+
+html body .page .thumbnail .caption-static {
+  position: static;
+}
+
+html body .page .thumbnail .caption h4, html body .thumbnail .caption {
+  letter-spacing: 0.08em;
+}
+
+html body .page .thumbnail .caption p {
+  margin-top: 3px;
+}
+
+html body .page .thumbnail .caption .small {
+  font-size: 12px;
+}  
 .page .img-responsive {
   display: block;
   max-width: 100%;
@@ -524,33 +552,7 @@ html.lt-ie-10 .page .ranges > .cell-sm-11 {
   /* fix for flashing background */
   -webkit-transform: translate3d(0px, 0px, 0px);
 }
-.page .thumbnail {
-  display: block;
-  padding: 4px;
-  margin-bottom: 28px;
-  line-height: 1.75;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 0;
-  -webkit-transition: border 0.2s ease-in-out;
-  -o-transition: border 0.2s ease-in-out;
-  transition: border 0.2s ease-in-out;
-}
-.page .thumbnail > img,
-.page .thumbnail a > img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  margin-left: auto;
-  margin-right: auto;
-}
-/* html body .thumbnail {
-  padding: 0;
-  margin: 0;
-  border: none;
-  border-radius: 0;
-  margin-bottom: 25px;
-} */
+
 
 .caption {
   padding-top: 8px;
@@ -558,24 +560,6 @@ html.lt-ie-10 .page .ranges > .cell-sm-11 {
   color: #c7c7c7;
   text-align: left;
   
-}
-.page .thumbnail .caption {
-  padding: 9px;
-  color: #717171;
-}
-html body .page .thumbnail .caption {
-  position: relative;
-  border: 1px solid #eeeeee;
-  border-top: none;
-  padding: 34px 10px;
-  color: #313131;
-}
-html body .page .thumbnail .caption h4, html body .page .thumbnail .caption {
-  letter-spacing: 0.08em;
-}
-
-html body .thumbnail .caption p {
-  margin-top: 3px;
 }
 .cloned {
   display: block;
@@ -589,19 +573,8 @@ html body .thumbnail .caption p {
 .page a.text-graylight:focus {
   color: #aeaeae;
 }
-html body .page .thumbnail .caption-link {
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  transform: translate(-50%, 50%);
-  padding: 11px 40px;
-  border-color: #eeeeee;
-  background-color: #fff;
-}
 
-html body .page .thumbnail .caption-link:hover, html body  .page .thumbnail .caption-link:focus {
-  background-color: #313131;
-}
+
 .caption h4{
   font-size: 15px;
   
@@ -677,9 +650,7 @@ html.lt-ie-10 .ranges > .cell-lg-5 {
 .page a.text-dark:focus {
       color: #181818;
     }
-    html body .thumbnail .caption .small {
-      font-size: 12px;
-    }
+  
     small {
       font-size: 80%;
     }   
