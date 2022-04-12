@@ -524,7 +524,7 @@ html.lt-ie-10 .page .ranges > .cell-sm-11 {
   /* fix for flashing background */
   -webkit-transform: translate3d(0px, 0px, 0px);
 }
-.thumbnail {
+.page .thumbnail {
   display: block;
   padding: 4px;
   margin-bottom: 28px;
@@ -536,8 +536,8 @@ html.lt-ie-10 .page .ranges > .cell-sm-11 {
   -o-transition: border 0.2s ease-in-out;
   transition: border 0.2s ease-in-out;
 }
-.thumbnail > img,
-.thumbnail a > img {
+.page .thumbnail > img,
+.page .thumbnail a > img {
   display: block;
   max-width: 100%;
   height: auto;
@@ -559,18 +559,18 @@ html.lt-ie-10 .page .ranges > .cell-sm-11 {
   text-align: left;
   
 }
-.thumbnail .caption {
+.page .thumbnail .caption {
   padding: 9px;
   color: #717171;
 }
-html body .thumbnail .caption {
+html body .page .thumbnail .caption {
   position: relative;
   border: 1px solid #eeeeee;
   border-top: none;
   padding: 34px 10px;
   color: #313131;
 }
-html body .thumbnail .caption h4, html body .thumbnail .caption {
+html body .page .thumbnail .caption h4, html body .page .thumbnail .caption {
   letter-spacing: 0.08em;
 }
 
@@ -589,7 +589,7 @@ html body .thumbnail .caption p {
 .page a.text-graylight:focus {
   color: #aeaeae;
 }
-html body .thumbnail .caption-link {
+html body .page .thumbnail .caption-link {
   position: absolute;
   left: 50%;
   bottom: 0;
@@ -599,7 +599,7 @@ html body .thumbnail .caption-link {
   background-color: #fff;
 }
 
-html body .thumbnail .caption-link:hover, html body .thumbnail .caption-link:focus {
+html body .page .thumbnail .caption-link:hover, html body  .page .thumbnail .caption-link:focus {
   background-color: #313131;
 }
 .caption h4{
