@@ -3,9 +3,11 @@
     <head>
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1">
-        <title> Admin</title>
+        <title>Admin Cat Website</title>
         <script src="https://kit.fontawesome.com/00de40d4af.js" crossorigin="anonymous"></script>
-        <link   rel="stylesheet" href="admin.css"  >
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="/admin.css"  >
        
     </head>
     <body>
@@ -13,38 +15,38 @@
         <input type="checkbox" id="nav-toggle">        
         <div class="sidebar">
             <div class="sidebar-brand">
-            <img src="/image/1.png" width="80px" height="70px" alt="">
-            <div>
-                <h4><span>Admin</span></h4>
-            </div>
+            <img src="/images/logo.png"alt="">
             </div>
                     
             <div class="sidebar-menu">
                 <ul>
                     <li>
-                        <a href="http://127.0.0.1:5500/index.html" target="_top" class="active"><span class="fas fa-laptop-house"></span>
-                        <span>Quản lý </span></a>
+                        <a href="" target="_top" class="active"><span class="fas fa-laptop-house"></span>
+                        <span>Dashboard</span></a>
                     </li>
                     <li>
-                        <a href="http://127.0.0.1:5500/thongke.html" target="_top"><span class="fas fa-clipboard-list"></span>
-                        <span>Thống kê thông tin  </span></a>
-                    </li>
-    
-                    <li>
-                        <a href="http://127.0.0.1:5500/khaibao.html" target="_top" ><span class="fas fa-notes-medical"></span>
-                        <span> </span></a>
+                        <a href="" target="_top"><span class="fas fa-user"></span>
+                        <span>Customers</span></a>
                     </li>
                     <li>
-                        <a href="http://127.0.0.1:5500/cachly.html" target="_top"><span class="fas fa-people-arrows"></span>
-                        <span></span></a>
+                        <a href="" target="_top"><span class="bi bi-file-text"></span>
+                        <span>Posts</span></a>
                     </li>
                     <li>
-                        <a href="http://127.0.0.1:5500/test.html" target="_top"><span class="fas fa-vials"></span>
-                        <span> </span></a>
+                        <a href="" target="_top" ><span class="fas fa-comment"></span>
+                        <span>Messages</span></a>
                     </li>
                     <li>
-                        <a href="http://127.0.0.1:5500/tiem.html" target="_top"><span class="fas fa-syringe"></span>
-                        <span> </span></a>
+                        <a href="" target="_top"><span class="fas fa-question"></span>
+                        <span>Help</span></a>
+                    </li>
+                    <li>
+                        <a href="" target="_top"><span class="fas fa fa-gear"></span>
+                        <span>Setting</span></a>
+                    </li>
+                    <li>
+                        <a href="" target="_top"><span class="bi bi-box-arrow-in-right"></span>
+                        <span>Sign Out</span></a>
                     </li>
                 </ul>
             </div>
@@ -56,29 +58,200 @@
                     <label for="nav-toggle">
                         <span class="fas fa-bars"></span>
                     </label>
-                    Quản lý
                 </h2>
 
                 <div class="search-wrapper">
                     <span class="fas fa-search"></span>
-                    <input type="search" placeholder="Tìm kiếm">
+                    <input type="search" placeholder="Search here">
                 </div>
+
+
+            <div class="user-wrapper">
+                <span class=" far fa-bell"></span>
+                <span class="fas fa-user-circle"></span>
+                <div>
+                   
+                </div>
+            </div>
+            </header>
+            <main>
+                <div class="cards">
+                    <div class="cards-single">
+                        <div>
+                            <h1>1902</h1>
+                            <span>Daily Views</span>
+                        </div>
+                        <div>
+                                <span class="fas fa-eye"></span>
+                        </div>
+                    </div>
+
+
+                    <div class="cards-single">
+                        <div>
+                            <h1>40</h1>
+                             <span>Sales</span>
+                        </div>
+                        <div>
+                            <span class="bi bi-cart-fill"></span>
+                         </div>
+                    </div>
+
+
+                    <div class="cards-single">
+                        <div>
+                            <h1>210</h1>
+                            <span>Comment</span>
+                        </div>
+                        <div>
+                            <span class="fas fa-comments"></span>
+                        </div>
+                    </div>
+
+
+                    <div class="cards-single">
+                        <div>
+                            <h1>$3050</h1>
+                            <span>Earning</span>
+                        </div>
+                        <div>
+                            <span class="fas fa-dollar-sign"></span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="recent-grid">
+                    <div class="projects">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3>Recent Orders </h3>
+
+                                <button>View All </button>
+                            </div>
+
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table width="100%">
+                                        <thead>
+                                            <tr>
+                                                <td> Name </td>
+                                                <td> Price  </td>
+                                                <td> Payment</td>
+                                                <td> Status</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Abyssinian</td>
+                                                <td>$4500 </td>
+                                                <td>Cash </td>
+                                                <td>
+                                                    <span class="status green"></span>
+                                                    Delivered 
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Bombay</td>
+                                                <td>$700</td>
+                                                <td>Banking</td>
+                                                <td>
+                                                    <span class="status yellow"></span>
+                                                    Pending 
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Maine coon</td>
+                                                <td>$2000</td>
+                                                <td>Cash</td>
+                                                <td>
+                                                    <span class="status red"></span>
+                                                    Return 
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Bengal</td>
+                                                <td>$1500</td>
+                                                <td>Banking</td>
+                                                <td>
+                                                    <span class="status green"></span>
+                                                    Delivered
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Korat</td>
+                                                <td>$700</td>
+                                                <td>Banking</td>
+                                                <td>
+                                                    <span class="status yellow"></span>
+                                                    Pending 
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Devon Rex</td>
+                                                <td>$1200</td>
+                                                <td>Cash</td>
+                                                <td>
+                                                    <span class="status green"></span>
+                                                    Delivered
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Laperm</td>
+                                                <td>$900</td>
+                                                <td>Banking</td>
+                                                <td>
+                                                    <span class="status red"></span>
+                                                    Return 
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Exotic</td>
+                                                <td>$400</td>
+                                                <td>Cash</td>
+                                                <td>
+                                                    <span class="status yellow"></span>
+                                                    Pending 
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Chartreux</td>
+                                                <td>$3000</td>
+                                                <td>Banking</td>
+                                                <td>
+                                                    <span class="status red"></span>
+                                                    Return 
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Burmese</td>
+                                                <td>$1000</td>
+                                                <td>Banking</td>
+                                                <td>
+                                                    <span class="status green"></span>
+                                                    Delivered 
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
                     <div class="customers">
                         <div class="card">
                             <div class="card-header">
-                                <h3>Liên hệ: </h3>
-
-                                <button>Xem thêm <span class="fas fa-arrow-right"></span> </button>
+                                <h3>Admin</h3>
+                                <button>View All</span> </button>
                             </div>
 
                             <div class="card-body">
                                 <div class="customer">
                                     <div class="info">
-                                        <img src="/image/3.png" width="40px" height="40px" alt="">
+                                        <img src="/images/3.png" width="40px" height="40px" alt="">
                                         <div>
                                             <h4>Phạm Thị Linh</h4>
-                                            <small>Quản trị viên</small>
+                                            <small>2051063966</small>
                                         </div>
                                     </div>
                                     <div class="contact">
@@ -90,10 +263,10 @@
 
                                 <div class="customer">
                                     <div class="info">
-                                        <img src="/image/VA.png" width="40px" height="40px" alt="">
+                                        <img src="/images/VA.png" width="40px" height="40px" alt="">
                                         <div>
                                             <h4>Vũ Vân Anh</h4>
-                                            <small>Quản trị viên</small>
+                                            <small>2051062391</small>
                                         </div>
                                     </div>
                                     <div class="contact">
@@ -105,10 +278,10 @@
 
                                 <div class="customer">
                                     <div class="info">
-                                        <img src="/image/Thu.png" width="40px" height="40px" alt="">
+                                        <img src="/images/ha.png" width="40px" height="40px" alt="">
                                         <div>
                                             <h4>Nguyễn Thị Thu Hà</h4>
-                                            <small>Quản trị viên</small>
+                                            <small>2051063641</small>
                                         </div>
                                     </div>
                                     <div class="contact">
@@ -116,6 +289,9 @@
                                         <span class="far fa-comment-dots"></span>
                                         <span class="fas fa-mobile-alt"></span>
                                     </div>
+                                </div>
+
+        
                                 </div>
                             </div>
 
