@@ -280,6 +280,7 @@ html .page .offset-top-40 {
     color: #732c32;
   }
 /*body 3*/
+
 .page .owl-dots-modile .owl-dots {
   display: block !important;
 }
@@ -299,10 +300,14 @@ html .page .offset-top-40 {
   color: #c7c7c7;
   text-align: left;
 }  
-.page .thumbnail .caption {
-  padding: 9px;
-  color: #717171;
+html body .page .thumbnail {
+  padding: 0;
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  margin-bottom: 25px;
 }
+
 html body .page .thumbnail .caption {
   position: relative;
   border: 1px solid #eeeeee;
@@ -315,7 +320,7 @@ html body .page .thumbnail .caption-static {
   position: static;
 }
 
-html body .page .thumbnail .caption h4, html body .thumbnail .caption {
+html body .page .thumbnail .caption h4, html body .page .thumbnail .caption {
   letter-spacing: 0.08em;
 }
 
@@ -325,7 +330,81 @@ html body .page .thumbnail .caption p {
 
 html body .page .thumbnail .caption .small {
   font-size: 12px;
-}  
+}
+
+html body .page  .thumbnail .caption-bottom .btn {
+  padding: 11px 30px;
+}
+
+html body .page .thumbnail .caption-top {
+  border-top: 1px solid #eeeeee;
+  padding: 41px 10px 28px 10px;
+}
+
+html body .page .thumbnail .caption-link {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 50%);
+  padding: 11px 40px;
+  border-color: #eeeeee;
+  background-color: #fff;
+}
+
+
+html body .page .thumbnail .caption-link:hover, html body .thumbnail .caption-link:focus {
+  background-color: #313131;
+}
+
+.page .img-thumbnail,
+.page .thumbnail {
+  box-shadow: none;
+}
+
+.page .thumbnail-variant-1 {
+  display: inline-block;
+  position: relative;
+}
+
+.page  .thumbnail-variant-1 .caption {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: .3s;
+  background-color: rgba(215, 204, 194, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page .thumbnail-variant-1 .caption:before {
+  content: '+';
+  color: #313131;
+  font-size: 100px;
+}
+
+@media (min-width: 992px) {
+.page   .thumbnail-variant-1 .caption:before {
+    font-size: 150px;
+  }
+}
+
+.page .thumbnail-variant-1:hover .caption {
+  opacity: 1;
+}
+
+.page .thumbnail-block {
+  display: block;
+}
+
+.page .thumbnail-block > img,
+.page  .thumbnail-block a > img {
+  width: 100%;
+  height: auto;
+}
 .page .text-graylight {
   color: #c7c7c7;
 }
